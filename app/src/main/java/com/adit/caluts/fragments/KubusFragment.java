@@ -26,27 +26,26 @@ public class KubusFragment extends Fragment {
         // Required empty public constructor
     }
 
-    EditText sisi;
-    TextView hasilBalok;
-    Button hitung_balok;
-    double panjang,tinggi,lebar, hsb;
+    EditText input_sisi;
+    TextView hasilKubus;
+    Button hitung_Kubus;
+    double sisi, hsk;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_balok, container, false);
-        sisi =  view.findViewById(R.id.edt_width);
-        hasilBalok = view.findViewById(R.id.tv_result_balok);
+        View view = inflater.inflate(R.layout.fragment_kubus, container, false);
+        input_sisi =  view.findViewById(R.id.edt_sisi);
+        hasilKubus = view.findViewById(R.id.tv_result_kubus);
+        hitung_Kubus = view.findViewById(R.id.btn_calculate_kubus);
 
-        hitung_balok.setOnClickListener(new View.OnClickListener() {
+        hitung_Kubus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                panjang = Double.valueOf(input_panjang.getText().toString());
-                tinggi = Double.valueOf(input_tinggi.getText().toString());
-                lebar = Double.valueOf(input_lebar.getText().toString());
-                hsb = (panjang * lebar * tinggi);
-                hasilBalok.setText(NumberFormat.getInstance().format(hsb));
+                sisi = Double.valueOf(input_sisi.getText().toString());
+                hsk = (sisi * sisi * sisi);
+                hasilKubus.setText(NumberFormat.getInstance().format(hsk));
 
             }
 
