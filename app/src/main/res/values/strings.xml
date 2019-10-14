@@ -5,5 +5,19 @@
     <string name="height">Tinggi</string>
     <string name="calculate">Hitung</string>
     <string name="result">Hasil</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="slide_1_title">Volume Kubus!</string>
+    <string name="slide_1_desc">Menghitung Volume Kubus!</string>
+
+    <string name="slide_2_title">Volume Balok</string>
+    <string name="slide_2_desc">Menghitung Volume Balok!</string>
+
+    <string name="slide_3_title">Volume Tabung</string>
+    <string name="slide_3_desc">Menhitung Volume Tabung!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
